@@ -40,17 +40,36 @@
 
 .sig {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 #display {
     width: 22%;
-    margin-right: 30px;
     text-align: center;
     border-radius: 18px;
     font-size: 19px;
     padding: 5px;
     border: 2px solid black;
+}
+
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    #display {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    #display {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #display {
+        width: 50%;
+    }
 }
 
 .box:hover {
